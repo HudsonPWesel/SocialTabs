@@ -12,12 +12,11 @@ import classes from './App.module.css'
 
 function App() {
     const socialLinks = [
-        { name: "Instagram", icon: IconInsta },
-        { name: "LinkedIn", icon: IconLinkedIn },
-        { name: "Twitter", icon: IconTwitter },
-        { name: "GitHub", icon: IconGitHub },
-        { name: "HackTheBox", icon: HTBIcon },
-        { name: "Discord", icon:  DiscordIcon },
+        { name: "Instagram", icon: IconInsta, link:"https://www.instagram.com/hudson_wesel/"  },
+        { name: "LinkedIn", icon: IconLinkedIn, link:"https://www.linkedin.com/in/hudsonpiercewesel/"},
+        { name: "Twitter", icon: IconTwitter, link:"https://twitter.com/HudsonWesel" },
+        { name: "GitHub", icon: IconGitHub, link:"https://github.com/HudsonPWesel"},
+        { name: "HackTheBox", icon: HTBIcon , link:"https://app.hackthebox.com/profile/overview"},
 
 
     ]
@@ -25,7 +24,7 @@ function App() {
         <div className={classes['Content-Container']}>
             <ProfileImage image={image} fullName={"Hudson Wesel"} />
             <div className={classes['Social-Container']}>
-                {socialLinks.map((tabName) => <SocialTab name={tabName.name} icon={tabName.icon} />)}</div>
+                {socialLinks.map((tabName) => <SocialTab name={tabName.name} icon={tabName.icon} link={tabName.link} />)}</div>
         </div>
     )
 }
