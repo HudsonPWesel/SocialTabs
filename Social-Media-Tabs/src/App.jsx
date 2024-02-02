@@ -7,6 +7,7 @@ import SocialTab from './components/SocialTab.jsx'
 import IconTwitter from '../public/twitter.svg'
 import IconGitHub from '../public/github-desktop.svg'
 import HTBIcon from '../public/hack-the-box.svg'
+import DiscordIcon from '../public/discord.svg'
 import classes from './App.module.css'
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
         { name: "LinkedIn", icon: IconLinkedIn },
         { name: "Twitter", icon: IconTwitter },
         { name: "GitHub", icon: IconGitHub },
-        { name: "HackTheBox", icon: HTBIcon }
+        { name: "HackTheBox", icon: HTBIcon },
+        { name: "Discord", icon:  DiscordIcon },
 
 
     ]
